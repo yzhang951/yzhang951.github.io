@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Academic Genealogy</title>
+	<link rel="stylesheet" href="tree_maker-min.css">
+	<script type="text/javascript" src="tree_maker-min.js"></script>
+</head>
+
+
+<style type="text/css">
+	body{
+  		margin-right: 300px;
+  		margin-left: 300px;
+	}
+</style>
+
+<center><h1>Academic Genealogy</h1></center>
+
+<center>
+	<hr>
+        <a href=../index.html>Home </a> | 
+        <a href=../Research/Research.html>Research</a> |
+        <a href=../People/People.html>People</a> |
+        <a href=../Publication/Publication.html>Publication</a> | 
+        <a href=../News/News.html>News</a> | 
+        <a href=../Gallery/Gallery.html>Gallery</a>  
+	<hr>
+</center>
+
+<body bgcolor="#fffff7" text="#000000" LINK=#000090 VLINK=#000090>
+
+
+
+<div id="my_tree"></div>
+<script type="text/javascript">
+	let nestedTree = {
+        15:'',
+        16:'',
+    }
+
+    let tree1 = {
+        1: {
+			2: '',
+            3: '',
+            4: '',
+            5: '',
+            6: {
+            	7:{
+            		8:{
+            			9:{
+            				10:{
+            					11:{
+            						12:{
+            							15:'',
+            						},
+            						13:'',
+            						14: nestedTree
+            					},
+            				},
+            			},
+            		},
+            	},
+            },
+        },
+    }
+       
+
+    let tree = tree1
+
+    let params = {
+    	0: {trad: ''},
+        1: {trad: 'Johann Carl Friedrich Gauss (U. Helmstedt, 1799 Ph.D., 1777-1855)'},
+        2: {trad: 'Friedrich Wilhelm Bessel (U. Göttingen, 1810 Ph.D., 1784-1846)'},
+        3: {trad: 'Heinrich Ferdinand Scherk (U. Berlin, 1823 Ph.D., 1798-1885)'},
+        4: {trad: 'Ernst Eduard Kummer (U. Halle-Wittenberg, 1831 Ph.D., 1810-1893)'},
+        5: {trad: 'Christoph Gudermann (U. Göttingen, 1841 Ph.D., 1798-1852)'},
+        6: {trad: 'Karl Theodor Wilhelm Weierstrass (U. Königsberg, 1854 Honorary, 1815-1897)'},
+        7: {trad: 'Carl David Tolmé Runge (U. Berlin, 1880 Ph.D., 1856-1927)'},
+        8: {trad: 'Max Born (U. Göttingen, 1906 Ph.D., 1882-1970)'},
+        9: {trad: 'J. Robert Oppenheimer (U. Göttingen, 1927 Ph.D., 1904-1967)'},
+        10:{trad: 'Leslie Lawrance Foldy (U. California at Berkeley, 1948 Ph.D., 1919-2001)'},
+        11:{trad: 'Sidney Yip (University of Michigan, 1962 Ph.D., 1936-)'},
+        12:{trad: 'Ju Li (2000 MIT Ph.D.), MIT Nuclear Sci. Eng. and Materials Sci. Eng.)'},
+        13:{trad: 'Wei Cai (2001 MIT Ph.D.), Stanford U. Mechanical Engineering'},
+        14:{trad: 'Ting Zhu (2004 MIT Ph.D.), Georgia Tech. Mechanical Engineering'},
+        15:{trad: 'Yin Zhang (2021 GT Ph.D., MIT Postdoc), TBD.', styles: {'box-shadow': '0 0 15px 2px blue'}},
+        16:{trad: 'Dengke Chen (2020 GT Postdoc), SJTU, Engineering Mechanics'},
+    };
+
+    treeMaker(tree, {
+        id: 'my_tree',
+        card_click: function (element) {
+            console.log(element);
+        },
+        treeParams: params,
+        'link_width': '2px',
+        'link_color': '#808080',
+    });
+</script>
+
+<br>
+<footer>
+  <p>© 2022 Zhang Research Group.<br>
+</footer>
+</html>
