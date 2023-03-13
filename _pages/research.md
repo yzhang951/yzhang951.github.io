@@ -8,14 +8,11 @@ redirect_from:
 
 {% include base_path %}
 
-High Entropy Alloy
-======
+## High Entropy Alloy
 TBD1
 
-Gradient structured materials
-======
+## Gradient structured materials
 TBD2
 
-Additive
-======
+## Additive
 TBD3
