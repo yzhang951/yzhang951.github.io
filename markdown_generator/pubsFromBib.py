@@ -25,15 +25,8 @@ import os
 import re
 
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
-publist = {
-    "proceeding": {
-        "file" : "proceedings.bib",
-        "venuekey": "booktitle",
-        "venue-pretext": "In the proceedings of ",
-        "collection" : {"name":"publications",
-                        "permalink":"/publication/"}
-        
-    },
+publist = {       
+    
     "journal":{
         "file": "pubs.bib",
         "venuekey" : "journal",
@@ -69,6 +62,8 @@ for pubsource in publist:
         
         try:
             pub_year = f'{b["year"]}'
+            volume = f'{b["volume"]}'
+            pages = f'{b["pages"]}'
 
             #todo: this hack for month and day needs some cleanup
             if "month" in b.keys(): 
@@ -76,8 +71,10 @@ for pubsource in publist:
                     pub_month = "0"+b["month"]
                     pub_month = pub_month[-2:]
                 elif(b["month"] not in range(12)):
-                    tmnth = strptime(b["month"][:3],'%b').tm_mon   
-                    pub_month = "{:02d}".format(tmnth) 
+                    #tmnth = strptime(b["month"][:3],'%b').tm_mon   
+                    #pub_month = "{:02d}".format(tmnth) 
+                    pub_month = b["month"][5:7]
+                    pub_day = b["month"][8:10]
                 else:
                     pub_month = str(b["month"])
             if "day" in b.keys(): 
@@ -92,7 +89,6 @@ for pubsource in publist:
             url_slug = re.sub("\\[.*\\]|[^a-zA-Z0-9_-]", "", clean_title)
             url_slug = url_slug.replace("--","-")
 
-            md_filename = (str(pub_date) + "-" + url_slug + ".md").replace("--","-")
             html_filename = (str(pub_date) + "-" + url_slug).replace("--","-")
 
             #Build Citation from text
@@ -102,18 +98,23 @@ for pubsource in publist:
             for author in bibdata.entries[bib_id].persons["author"]:
                 citation = citation+" "+author.first_names[0]+" "+author.last_names[0]+", "
 
+            authors = citation
+
             #citation title
             citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
 
             #add venue logic depending on citation type
             venue = publist[pubsource]["venue-pretext"]+b[publist[pubsource]["venuekey"]].replace("{", "").replace("}","").replace("\\","")
 
+            md_filename = (str(pub_date) + "-" + venue + ".md").replace("--","-")
+
             citation = citation + " " + html_escape(venue)
-            citation = citation + ", " + pub_year + "."
+            citation = citation + ", " + volume + ", " + pages + ", " + pub_year + "."
 
             
             ## YAML variables
-            md = "---\ntitle: \""   + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + '"\n'
+            #md = "---\ntitle: \""   + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + '"\n'
+            md = "---\ntitle: \"\"\n"
             
             md += """collection: """ +  publist[pubsource]["collection"]["name"]
 
@@ -137,6 +138,10 @@ for pubsource in publist:
 
             md += "\ncitation: '" + html_escape(citation) + "'"
 
+            md += "\nauthors: '" + html_escape(authors) + "'"
+            md += "\nvolume: '" + html_escape(volume) + "'"
+            md += "\npages: '" + html_escape(pages) + "'"
+
             md += "\n---"
 
             
@@ -145,7 +150,8 @@ for pubsource in publist:
                 md += "\n" + html_escape(b["note"]) + "\n"
 
             if url:
-                md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\"}\n" 
+#                md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\"}\n" 
+                print()
             else:
                 md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"} for full citation"
 
