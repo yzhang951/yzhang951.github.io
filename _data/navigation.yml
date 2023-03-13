@@ -13,7 +13,7 @@ main:
     url: /teaching/    
     
   - title: "News"
-    url: /year-archive/
+    url: /news/
     
   - title: "Gallery"
     url: /portfolio/
