@@ -1,5 +1,5 @@
 ---
-title: "Trans-twin dislocations in nanotwinned metals"
+title: ""
 collection: publications
 permalink: /publication/2023-01-01-Trans-twin-dislocations-in-nanotwinned-metals
 date: 2023-01-01
