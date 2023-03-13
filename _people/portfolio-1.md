@@ -1,7 +1,17 @@
 ---
-title: "Portfolio item number 1"
+title: "Principal Investigator"
 excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
+Education
+======
+* 2011.8-2015.7 B.S. in Theoretical and Applied Mechanics, Peking University
+  Advisor: Prof. Ting Zhu
+* 2015.8-2021.8 Ph.D in Mechanical Engineering, Georgia Institute of Technology
+  Advisor: Prof. Huiling Duan
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+Experience
+======
+* 2021.9-2023.1 Postdoctoral Associate, Massachusetts Institute of Technology
+  Advisor: Prof. Ju Li
+* 2023.1-now    Assistant Professor, Peking University

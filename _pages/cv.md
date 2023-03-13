@@ -11,30 +11,16 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* 2011.8-2015.7 B.S. in Theoretical and Applied Mechanics, Peking University
+  Advisor: Prof. Ting Zhu
+* 2015.8-2021.8 Ph.D in Mechanical Engineering, Georgia Institute of Technology
+  Advisor: Prof. Huiling Duan
 
-Work experience
+Experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* 2021.9-2023.1 Postdoctoral Associate, Massachusetts Institute of Technology
+  Advisor: Prof. Ju Li
+* 2023.1-now    Assistant Professor, Peking University
 
 Publications
 ======
@@ -56,4 +42,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* TBD
