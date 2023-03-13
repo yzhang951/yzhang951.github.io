@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Zhang Research Group"
 title_separator          : "-"
 name                     : &name "Yin Zhang"
-description              : &description "personal description"
+description              : &description "Dr. Zhang's Reasearch Group Website"
 url                      : https://yzhang951.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yzhang951/yzhang951.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Yin Zhang"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Yin Zhang is an Assistant Professor at Peking University, Department of Mechanics and Engineering Science."
   location         : "Beijing, China"
   employer         :
   pubmed           : 
