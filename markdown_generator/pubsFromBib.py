@@ -108,8 +108,8 @@ for pubsource in publist:
 
             md_filename = (str(pub_date) + "-" + venue + ".md").replace("--","-")
 
-            citation = citation + " " + html_escape(venue)
-            citation = citation + ", " + volume + ", " + pages + ", " + pub_year + "."
+            citation = citation + " <i>" + html_escape(venue) + "</i>"
+            citation = citation + ", <b>" + volume + "</b>, " + pages + ", " + pub_year + "."
 
             
             ## YAML variables

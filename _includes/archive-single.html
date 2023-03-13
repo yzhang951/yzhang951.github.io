@@ -54,7 +54,7 @@
     
     {% if post.citation and post.paperurl %}
       <!-- <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p> -->
-      <li><p>{{ post.citation }} <a href="{{ post.paperurl }}"><u>{(doi)}</u></a></p></li>
+      <li><p>{{ post.citation }} <a href="{{ post.paperurl }}"><u>(doi)</u></a></p></li>
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }} </p>
     {% elsif post.paperurl %}
