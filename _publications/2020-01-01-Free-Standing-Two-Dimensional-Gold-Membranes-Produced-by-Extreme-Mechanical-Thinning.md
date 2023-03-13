@@ -8,6 +8,4 @@ venue: 'ACS Nano'
 paperurl: 'https://doi.org/10.1021/acsnano.0c06697'
 citation: ' Qi Zhu,  Youran Hong,  Guang Cao,  Yin Zhang,  Xiaohan Zhang,  Kui Du,  Ze Zhang,  Ting Zhu,  Jiangwei Wang, &quot;Free-Standing Two-Dimensional Gold Membranes Produced by Extreme Mechanical Thinning.&quot; ACS Nano, 2020.'
 ---
-doi: 10.1021/acsnano.0c06697
-
 [Access paper here](https://doi.org/10.1021/acsnano.0c06697){:target="_blank"}
