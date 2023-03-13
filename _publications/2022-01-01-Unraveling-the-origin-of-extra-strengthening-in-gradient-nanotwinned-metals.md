@@ -1,5 +1,5 @@
 ---
-title: "Unraveling the origin of extra strengthening in gradient nanotwinned metals"
+title: ""
 collection: publications
 permalink: /publication/2022-01-01-Unraveling-the-origin-of-extra-strengthening-in-gradient-nanotwinned-metals
 date: 2022-01-01

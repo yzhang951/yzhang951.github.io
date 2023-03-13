@@ -1,5 +1,5 @@
 ---
-title: "In situ atomic-scale observation of dislocation climb and grain boundary evolution in nanostructured metal"
+title: ""
 collection: publications
 permalink: /publication/2022-01-01-In-situ-atomic-scale-observation-of-dislocation-climb-and-grain-boundary-evolution-in-nanostructured-metal
 date: 2022-01-01

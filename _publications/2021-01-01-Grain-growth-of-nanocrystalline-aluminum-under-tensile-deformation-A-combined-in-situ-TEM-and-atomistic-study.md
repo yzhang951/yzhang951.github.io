@@ -1,5 +1,5 @@
 ---
-title: "Grain growth of nanocrystalline aluminum under tensile deformation: A combined in situ TEM and atomistic study"
+title: ""
 collection: publications
 permalink: /publication/2021-01-01-Grain-growth-of-nanocrystalline-aluminum-under-tensile-deformation-A-combined-in-situ-TEM-and-atomistic-study
 date: 2021-01-01

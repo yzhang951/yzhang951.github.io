@@ -1,5 +1,5 @@
 ---
-title: "Modeling of microscale internal stresses in additively manufactured stainless steel"
+title: ""
 collection: publications
 permalink: /publication/2022-01-01-Modeling-of-microscale-internal-stresses-in-additively-manufactured-stainless-steel
 date: 2022-01-01

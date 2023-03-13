@@ -1,5 +1,5 @@
 ---
-title: "Unraveling dual phase transformations in a CrCoNi medium-entropy alloy"
+title: ""
 collection: publications
 permalink: /publication/2021-01-01-Unraveling-dual-phase-transformations-in-a-CrCoNi-medium-entropy-alloy
 date: 2021-01-01

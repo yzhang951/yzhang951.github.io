@@ -1,5 +1,5 @@
 ---
-title: "Tracking the sliding of grain boundaries at the atomic scale"
+title: ""
 collection: publications
 permalink: /publication/2022-01-01-Tracking-the-sliding-of-grain-boundaries-at-the-atomic-scale
 date: 2022-01-01

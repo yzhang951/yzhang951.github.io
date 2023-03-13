@@ -1,5 +1,5 @@
 ---
-title: "Learning constitutive relations of plasticity using neural networks and full-field data"
+title: ""
 collection: publications
 permalink: /publication/2022-01-01-Learning-constitutive-relations-of-plasticity-using-neural-networks-and-full-field-data
 date: 2022-01-01

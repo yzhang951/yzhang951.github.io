@@ -1,5 +1,5 @@
 ---
-title: "Lattice strains and diffraction elastic constants of cubic polycrystals"
+title: ""
 collection: publications
 permalink: /publication/2020-01-01-Lattice-strains-and-diffraction-elastic-constants-of-cubic-polycrystals
 date: 2020-01-01

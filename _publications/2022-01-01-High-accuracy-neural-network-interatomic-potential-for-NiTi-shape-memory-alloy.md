@@ -1,5 +1,5 @@
 ---
-title: "High accuracy neural network interatomic potential for NiTi shape memory alloy"
+title: ""
 collection: publications
 permalink: /publication/2022-01-01-High-accuracy-neural-network-interatomic-potential-for-NiTi-shape-memory-alloy
 date: 2022-01-01

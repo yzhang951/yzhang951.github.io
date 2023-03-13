@@ -1,5 +1,5 @@
 ---
-title: "Degradation by kinking in layered cathode materials"
+title: ""
 collection: publications
 permalink: /publication/2021-01-01-Degradation-by-kinking-in-layered-cathode-materials
 date: 2021-01-01

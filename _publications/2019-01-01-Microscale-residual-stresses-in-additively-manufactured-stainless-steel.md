@@ -1,5 +1,5 @@
 ---
-title: "Microscale residual stresses in additively manufactured stainless steel"
+title: ""
 collection: publications
 permalink: /publication/2019-01-01-Microscale-residual-stresses-in-additively-manufactured-stainless-steel
 date: 2019-01-01

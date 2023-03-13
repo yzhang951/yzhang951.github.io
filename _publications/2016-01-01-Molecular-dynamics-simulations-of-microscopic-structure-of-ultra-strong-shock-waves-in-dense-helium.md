@@ -1,5 +1,5 @@
 ---
-title: "Molecular dynamics simulations of microscopic structure of ultra strong shock waves in dense helium"
+title: ""
 collection: publications
 permalink: /publication/2016-01-01-Molecular-dynamics-simulations-of-microscopic-structure-of-ultra-strong-shock-waves-in-dense-helium
 date: 2016-01-01

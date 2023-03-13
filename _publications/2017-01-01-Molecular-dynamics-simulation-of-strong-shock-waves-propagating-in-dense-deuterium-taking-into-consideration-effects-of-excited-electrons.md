@@ -1,5 +1,5 @@
 ---
-title: "Molecular dynamics simulation of strong shock waves propagating in dense deuterium, taking into consideration effects of excited electrons"
+title: ""
 collection: publications
 permalink: /publication/2017-01-01-Molecular-dynamics-simulation-of-strong-shock-waves-propagating-in-dense-deuterium-taking-into-consideration-effects-of-excited-electrons
 date: 2017-01-01

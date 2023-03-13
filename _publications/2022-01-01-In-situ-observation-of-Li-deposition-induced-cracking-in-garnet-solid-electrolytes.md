@@ -1,5 +1,5 @@
 ---
-title: "In situ observation of Li deposition-induced cracking in garnet solid electrolytes"
+title: ""
 collection: publications
 permalink: /publication/2022-01-01-In-situ-observation-of-Li-deposition-induced-cracking-in-garnet-solid-electrolytes
 date: 2022-01-01

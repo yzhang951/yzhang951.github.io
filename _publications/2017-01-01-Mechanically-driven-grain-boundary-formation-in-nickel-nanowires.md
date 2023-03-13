@@ -1,5 +1,5 @@
 ---
-title: "Mechanically driven grain boundary formation in nickel nanowires"
+title: ""
 collection: publications
 permalink: /publication/2017-01-01-Mechanically-driven-grain-boundary-formation-in-nickel-nanowires
 date: 2017-01-01

@@ -1,5 +1,5 @@
 ---
-title: "Additively manufactured hierarchical stainless steels with high strength and ductility"
+title: ""
 collection: publications
 permalink: /publication/2018-01-01-Additively-manufactured-hierarchical-stainless-steels-with-high-strength-and-ductility
 date: 2018-01-01

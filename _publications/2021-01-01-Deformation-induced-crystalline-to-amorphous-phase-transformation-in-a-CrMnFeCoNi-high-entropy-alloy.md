@@ -1,5 +1,5 @@
 ---
-title: "Deformation-induced crystalline-to-amorphous phase transformation in a CrMnFeCoNi high-entropy alloy"
+title: ""
 collection: publications
 permalink: /publication/2021-01-01-Deformation-induced-crystalline-to-amorphous-phase-transformation-in-a-CrMnFeCoNi-high-entropy-alloy
 date: 2021-01-01

@@ -1,5 +1,5 @@
 ---
-title: "Strain gradient plasticity in gradient structured metals"
+title: ""
 collection: publications
 permalink: /publication/2020-01-01-Strain-gradient-plasticity-in-gradient-structured-metals
 date: 2020-01-01

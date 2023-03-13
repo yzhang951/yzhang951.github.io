@@ -1,5 +1,5 @@
 ---
-title: "In situ nano-thermomechanical experiment reveals brittle to ductile transition in silicon nanowires"
+title: ""
 collection: publications
 permalink: /publication/2019-01-01-In-situ-nano-thermomechanical-experiment-reveals-brittle-to-ductile-transition-in-silicon-nanowires
 date: 2019-01-01

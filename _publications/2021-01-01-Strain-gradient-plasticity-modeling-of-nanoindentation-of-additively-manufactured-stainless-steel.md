@@ -1,5 +1,5 @@
 ---
-title: "Strain gradient plasticity modeling of nanoindentation of additively manufactured stainless steel"
+title: ""
 collection: publications
 permalink: /publication/2021-01-01-Strain-gradient-plasticity-modeling-of-nanoindentation-of-additively-manufactured-stainless-steel
 date: 2021-01-01

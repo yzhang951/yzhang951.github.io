@@ -1,5 +1,5 @@
 ---
-title: "Characterization of gradient plastic deformation in gradient nanotwinned Cu"
+title: ""
 collection: publications
 permalink: /publication/2023-01-01-Characterization-of-gradient-plastic-deformation-in-gradient-nanotwinned-Cu
 date: 2023-01-01

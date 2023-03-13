@@ -1,5 +1,5 @@
 ---
-title: "Tuning element distribution, structure and properties by composition in high-entropy alloys"
+title: ""
 collection: publications
 permalink: /publication/2019-01-01-Tuning-element-distribution-structure-and-properties-by-composition-in-high-entropy-alloys
 date: 2019-01-01

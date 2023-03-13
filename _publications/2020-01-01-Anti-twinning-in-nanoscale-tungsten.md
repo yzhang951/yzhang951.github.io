@@ -1,5 +1,5 @@
 ---
-title: "Anti-twinning in nanoscale tungsten"
+title: ""
 collection: publications
 permalink: /publication/2020-01-01-Anti-twinning-in-nanoscale-tungsten
 date: 2020-01-01

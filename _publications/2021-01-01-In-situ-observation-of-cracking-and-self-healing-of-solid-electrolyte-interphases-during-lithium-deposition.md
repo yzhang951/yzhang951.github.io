@@ -1,5 +1,5 @@
 ---
-title: "In situ observation of cracking and self-healing of solid electrolyte interphases during lithium deposition"
+title: ""
 collection: publications
 permalink: /publication/2021-01-01-In-situ-observation-of-cracking-and-self-healing-of-solid-electrolyte-interphases-during-lithium-deposition
 date: 2021-01-01

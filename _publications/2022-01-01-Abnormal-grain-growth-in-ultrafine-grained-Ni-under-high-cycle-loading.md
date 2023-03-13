@@ -1,5 +1,5 @@
 ---
-title: "Abnormal grain growth in ultrafine grained Ni under high-cycle loading"
+title: ""
 collection: publications
 permalink: /publication/2022-01-01-Abnormal-grain-growth-in-ultrafine-grained-Ni-under-high-cycle-loading
 date: 2022-01-01

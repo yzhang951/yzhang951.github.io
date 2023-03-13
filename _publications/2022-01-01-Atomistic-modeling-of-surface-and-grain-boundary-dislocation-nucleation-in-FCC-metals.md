@@ -1,5 +1,5 @@
 ---
-title: "Atomistic modeling of surface and grain boundary dislocation nucleation in FCC metals"
+title: ""
 collection: publications
 permalink: /publication/2022-01-01-Atomistic-modeling-of-surface-and-grain-boundary-dislocation-nucleation-in-FCC-metals
 date: 2022-01-01

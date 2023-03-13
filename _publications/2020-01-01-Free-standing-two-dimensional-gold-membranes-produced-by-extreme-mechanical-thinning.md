@@ -1,5 +1,5 @@
 ---
-title: "Free-standing two-dimensional gold membranes produced by extreme mechanical thinning"
+title: ""
 collection: publications
 permalink: /publication/2020-01-01-Free-standing-two-dimensional-gold-membranes-produced-by-extreme-mechanical-thinning
 date: 2020-01-01

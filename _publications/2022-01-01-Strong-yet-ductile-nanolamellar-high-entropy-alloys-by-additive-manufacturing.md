@@ -1,5 +1,5 @@
 ---
-title: "Strong yet ductile nanolamellar high-entropy alloys by additive manufacturing"
+title: ""
 collection: publications
 permalink: /publication/2022-01-01-Strong-yet-ductile-nanolamellar-high-entropy-alloys-by-additive-manufacturing
 date: 2022-01-01
