@@ -3,6 +3,7 @@ title: "Principal Investigator"
 excerpt: "Prof. Zhang<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
+<a href="/cv/">CV</a>
 
 ## Education
 2011.8-2015.7 B.S. in Theoretical and Applied Mechanics, Peking University
