@@ -17,13 +17,13 @@ Education
 Experience
 ======
 * 2021.09-2023.01 &emsp;Postdoctoral Associate, Massachusetts Institute of Technology <br>Advisor: Prof. Ju Li
-* 2023.01-now &emsp;&emsp;Assistant Professor, Peking University
+* 2023.01-now &emsp;&emsp;&nbsp;Assistant Professor, Peking University
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+  <ol reversed>{% for post in site.publications reversed%}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ol>
   
 <!-- Talks
 ======
