@@ -1,0 +1,12 @@
+---
+title: "Free-standing two-dimensional gold membranes produced by extreme mechanical thinning"
+collection: publications
+permalink: /publication/2020-01-01-Free-standing-two-dimensional-gold-membranes-produced-by-extreme-mechanical-thinning
+date: 2020-01-01
+venue: 'ACS Nano'
+paperurl: 'https://doi.org/10.1021/acsnano.0c06697'
+citation: ' Qi Zhu,  Youran Hong,  Guang Cao,  Yin Zhang,  Xiaohan Zhang,  Kui Du,  Ze Zhang,  Ting Zhu,  Jiangwei Wang, &quot;Free-standing two-dimensional gold membranes produced by extreme mechanical thinning.&quot; ACS Nano, 14, 17091-17099, 2020.'
+authors: ' Qi Zhu,  Youran Hong,  Guang Cao,  Yin Zhang,  Xiaohan Zhang,  Kui Du,  Ze Zhang,  Ting Zhu,  Jiangwei Wang, '
+volume: '14'
+pages: '17091-17099'
+---
