@@ -81,10 +81,10 @@ analytics:
 # Site Author
 author:
   name             : "Yin Zhang"
-  avatar           : "profile.png"
-  bio              : "Assistant Professor at Department of Mechanics and Engineering Science, College of Engineering, Peking University"
+  avatar           : "COE_PKU.png"
+  bio              : "Assistant Professor"
   location         : "Beijing, China"
-  employer         :
+  employer         : "Department of Mechanics and Engineering Science, College of Engineering, Peking University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=23XDhOwAAAAJ&hl=en"
   email            :
