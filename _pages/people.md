@@ -16,7 +16,7 @@ author_profile: true
 
 ### Experience
 * 2021.09-2023.01 &emsp;Postdoctoral Associate, Massachusetts Institute of Technology <br>Advisor: Prof. Ju Li
-* 2023.01-now &emsp;&emsp;&ensp;&ensp;Assistant Professor, Peking University
+* 2023.01-now &emsp;&emsp;&ensp;Assistant Professor, Peking University
 
 {% for post in site.people %}
   {% include archive-single.html %}
