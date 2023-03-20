@@ -1,5 +1,5 @@
 ---
-title: "Ph. D. opening"
+title: "Ph.D. opening"
 excerpt: ""
 collection: portfolio
 ---
