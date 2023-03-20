@@ -5,7 +5,7 @@ permalink: /publication/2022-10-01-High-accuracy-neural-network-interatomic-pote
 date: 2022-10-01
 venue: 'Acta Materialia'
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S1359645422005973'
-citation: ' H. Tang,  <b>Y. Zhang</b>,  Q. Li,  H. Xu,  Y. Wang,  Y. Wang,  J. Li, &quot;High accuracy neural network interatomic potential for NiTi shape memory alloy.&quot; <i>Acta Materialia</i>, <b>238</b>, 118217, 2022.'
+citation: ' H. Tang,  <b>Y. Zhang</b>,  Q. Li,  H. Xu,  Y. Wang,  Y. Wang,  J. Li*, &quot;High accuracy neural network interatomic potential for NiTi shape memory alloy.&quot; <i>Acta Materialia</i>, <b>238</b>, 118217, 2022.'
 authors: ' H. Tang,  <b>Y. Zhang</b>,  Q. Li,  H. Xu,  Y. Wang,  Y. Wang,  J. Li, '
 volume: '238'
 pages: '118217'
