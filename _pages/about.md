@@ -17,7 +17,9 @@ The current research projects in the group include the mechanics of ultra-streng
 Principal Investigator
 ------
 ## Yin Zhang
-<br/><br/>
+<br/>
+<img src='/images/bio-photo.jpg' width="200">
+<br/>
 Assistant Professor<br/>
 Department of Mechanics and Engineering Science<br/>
 College of Engineering<br/>
