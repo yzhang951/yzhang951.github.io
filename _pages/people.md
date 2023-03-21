@@ -7,10 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
+<img src='/images/profile2.jpg' width="300"><br>
 ## Dr. Yin Zhang
 <a href="/cv/">Full CV</a>
-<br>
-<img src='/images/profile2.jpg' width="300">
+
 
 ### Education
 * 2011.08-2015.07 &emsp;B.S. in Theoretical and Applied Mechanics, Peking University <br>Advisor: Prof. Ting Zhu
