@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Yin Zhang @ PKU"
+title: "Yin Zhang PKU"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
