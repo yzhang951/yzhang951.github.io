@@ -1,7 +1,7 @@
 ---
 title: ""
 collection: publications
-permalink: /publication/new paper
+permalink: /publication/2023-03-27-Hydrogen-induced-attractive-force-between-two-partials-of-edge-dislocation-in-nickel
 date: 2023-03-27
 venue: 'Journal of Applied Mechanics'
 paperurl: 'https://doi.org/10.1115/1.4057049'

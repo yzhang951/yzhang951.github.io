@@ -5,8 +5,8 @@ permalink: /publications/
 author_profile: true
 ---
 
-You can also find my articles on my <u><a href="https://scholar.google.com/citations?user=23XDhOwAAAAJ&hl=en">Google Scholar</a></u> profile.
-<a href="/pub-tags/">Publications by Tags</a>
+You can also find my articles on my <a href="https://scholar.google.com/citations?user=23XDhOwAAAAJ&hl=en">Google Scholar</a> profile.
+<br><a href="/tags/">Publications by Tags</a>
 
 {% include base_path %}
 (# equal contribution, * corresponding author)

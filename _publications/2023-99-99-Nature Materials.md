@@ -1,7 +1,7 @@
 ---
 title: ""
 collection: publications
-permalink: /publication/new paper
+permalink: /publication/2023-99-99-Nature-Materials
 date: 2023-12-31
 venue: 'Nature Materials'
 paperurl: ''
