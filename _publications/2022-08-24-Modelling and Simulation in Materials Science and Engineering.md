@@ -9,4 +9,6 @@ citation: ' <u>Y. Zhang</u>#,  K. Ding#,  Y. Gu,  W. Chen,  Y. M. Wang,  J. El-A
 authors: ' <u>Y. Zhang</u>,  K. Ding,  Y. Gu,  W. Chen,  Y. Wang,  J. El-Awady,  D. McDowell,  T. Zhu, '
 volume: '30'
 pages: '074001'
+tags:
+  - Crystal Plasticity
 ---

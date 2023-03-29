@@ -9,4 +9,6 @@ citation: ' L. Bu#,  Z. Cheng#,  <u>Y. Zhang</u>,  H. Wu,  T. Zhu*,  L. Lu*, &qu
 authors: ' L. Bu,  Z. Cheng,  <u>Y. Zhang</u>,  H. Wu,  T. Zhu,  L. Lu, '
 volume: '229'
 pages: '115348'
+tags:
+  - Molecular Dynamics
 ---

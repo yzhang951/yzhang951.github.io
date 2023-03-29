@@ -10,6 +10,5 @@ authors: ''
 volume: ''
 pages: ''
 tags:
-  - Molecular Dynamics
   - Theory
 ---

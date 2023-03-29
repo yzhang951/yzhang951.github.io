@@ -10,6 +10,6 @@ authors: ' A. Barrios,  <u>Y. Zhang</u>,  X. Maeder,  G. Castelluccio,  O. Pierr
 volume: '209'
 pages: '114372'
 tags:
-  - "Theory"
+  - Theory
   - Phase Field
 ---

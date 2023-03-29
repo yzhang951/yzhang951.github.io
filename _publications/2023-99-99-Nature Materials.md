@@ -9,4 +9,8 @@ citation: 'Huang et al. "Quantitative tests revealing hydrogen enhanced dislocat
 authors: ''
 volume: ''
 pages: ''
+tags:
+  - Molecular Dynamics
+  - Nudged Elasti Band
+  - Theory
 ---

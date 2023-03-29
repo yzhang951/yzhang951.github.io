@@ -9,4 +9,7 @@ citation: ' <u>Y. Zhang</u>,  Q. Li,  T. Zhu,  J. Li*, &quot;Learning constituti
 authors: ' <u>Y. Zhang</u>,  Q. Li,  T. Zhu,  J. Li, '
 volume: '52'
 pages: '101645'
+tags:
+  - Finite Element
+  - Machine Learning
 ---

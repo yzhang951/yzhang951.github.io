@@ -9,4 +9,7 @@ citation: ' Z. Li#,  <u>Y. Zhang</u>#,  Z. Zhang,  Y. Cui,  Q. Guo,  P. Liu,  S.
 authors: ' Z. Li,  <u>Y. Zhang</u>,  Z. Zhang,  Y. Cui,  Q. Guo,  P. Liu,  S. Jin,  G. Sha,  K. Ding,  Z. Li,  T. Fan,  H. Urbassek,  Q. Yu,  T. Zhu,  D. Zhang,  Y. Wang, '
 volume: '13'
 pages: '5581'
+tags:
+  - Molecular Dynamics
+  - Theoru
 ---

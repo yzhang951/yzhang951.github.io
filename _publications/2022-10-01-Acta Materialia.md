@@ -9,4 +9,7 @@ citation: ' H. Tang,  <u>Y. Zhang</u>,  Q. Li,  H. Xu,  Y. Wang,  Y. Wang,  J. L
 authors: ' H. Tang,  <u>Y. Zhang</u>,  Q. Li,  H. Xu,  Y. Wang,  Y. Wang,  J. Li, '
 volume: '238'
 pages: '118217'
+tags:
+  - Molecular Dynamics
+  - Machine Learning
 ---
