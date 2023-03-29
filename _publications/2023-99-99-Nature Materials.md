@@ -11,6 +11,6 @@ volume: ''
 pages: ''
 tags:
   - Molecular Dynamics
-  - Nudged Elasti Band
+  - Nudged Elastic Band
   - Theory
 ---
