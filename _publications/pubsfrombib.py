@@ -97,7 +97,7 @@ for pubsource in publist:
             #citation authors - todo - add highlighting for primary author?
             for author in bibdata.entries[bib_id].persons["author"]:
                 if author.first_names[0] == "Yin" and author.last_names[0] == "Zhang":
-                    citation = citation+" <b>"+author.first_names[0][0]+". "+author.last_names[0]+"</b>, "
+                    citation = citation+" <u>"+author.first_names[0][0]+". "+author.last_names[0]+"</u>, "
                 else:
                     citation = citation+" "+author.first_names[0][0]+". "+author.last_names[0]+", "
 
@@ -111,8 +111,8 @@ for pubsource in publist:
 
             md_filename = (str(pub_date) + "-" + venue + ".md").replace("--","-")
 
-            citation = citation + " <i>" + html_escape(venue) + "</i>"
-            citation = citation + ", " + volume + ", " + pages + ", " + pub_year + "."
+            citation = citation + " <b>" + html_escape(venue) + "</b>"
+            citation = citation + ", " + volume + ", " + pages + " (" + pub_year + ")."
 
             
             ## YAML variables
