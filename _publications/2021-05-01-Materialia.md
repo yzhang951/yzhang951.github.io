@@ -9,4 +9,6 @@ citation: ' S. Stangebye,  <u>Y. Zhang</u>,  S. Gupta,  E. Hosseinian,  F. Yu,  
 authors: ' S. Stangebye,  <u>Y. Zhang</u>,  S. Gupta,  E. Hosseinian,  F. Yu,  C. Barr,  K. Hattar,  O. Pierron,  T. Zhu,  J. Kacher, '
 volume: '16'
 pages: '101068'
+tags:
+  - Molecular Dynamics
 ---

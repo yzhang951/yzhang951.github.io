@@ -9,4 +9,6 @@ citation: ' H. Liu,  <u>Y. Zhang</u>,  W. Kang*,  P. Zhang,  H. Duan,  X. T. He*
 authors: ' H. Liu,  <u>Y. Zhang</u>,  W. Kang,  P. Zhang,  H. Duan,  X. He, '
 volume: '95'
 pages: '023201'
+tags:
+  - Molecular Dynamics
 ---

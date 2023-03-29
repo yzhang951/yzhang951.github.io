@@ -9,4 +9,7 @@ citation: ' Y. M. Wang*,  T. Voisin,  J. McKeown,  J. Ye,  N. Calta,  Z. Li,  Z.
 authors: ' Y. Wang,  T. Voisin,  J. McKeown,  J. Ye,  N. Calta,  Z. Li,  Z. Zeng,  <u>Y. Zhang</u>,  W. Chen,  T. Roehling,  R. Ott,  M. Santala,  P. Depond,  M. Matthews,  A. Hamza,  T. Zhu, '
 volume: '17'
 pages: '63-71'
+tags:
+  - Molecular Dynamics
+  - Crystal Plasticity
 ---

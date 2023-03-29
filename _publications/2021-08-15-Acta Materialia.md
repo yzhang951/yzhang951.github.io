@@ -9,4 +9,7 @@ citation: ' Y. Chen#,  D. Chen#,  X. An*,  <u>Y. Zhang</u>,  Z. Zhou,  S. Lu,  P
 authors: ' Y. Chen,  D. Chen,  X. An,  <u>Y. Zhang</u>,  Z. Zhou,  S. Lu,  P. Munroe,  S. Zhang,  X. Liao,  T. Zhu,  Z. Xie, '
 volume: '215'
 pages: '117112'
+tags:
+  - Molecular Dynamics
+  - Nudged Elastic Band
 ---

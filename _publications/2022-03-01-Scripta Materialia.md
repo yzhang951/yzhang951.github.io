@@ -9,4 +9,7 @@ citation: ' A. Barrios,  <u>Y. Zhang</u>,  X. Maeder,  G. Castelluccio*,  O. Pie
 authors: ' A. Barrios,  <u>Y. Zhang</u>,  X. Maeder,  G. Castelluccio,  O. Pierron,  T. Zhu, '
 volume: '209'
 pages: '114372'
+tags:
+  - "Theory"
+  - Phase Field
 ---
