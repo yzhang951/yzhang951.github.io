@@ -10,7 +10,7 @@ redirect_from:
 
 The Zhang Research Group, under the leadership of Professor Yin Zhang, conducts cutting-edge research within the Department of Mechanics and Engineering Science at the College of Engineering, Peking University.
 
-Our team specializes in examining the mechanical properties of advanced engineering and energy materials, spanning from the nano to macro-scale. Our primary focus lies in materials modeling and simulation techniques.
+Our team specializes in simulating the mechanical properties of advanced engineering and energy materials, spanning from the nano to macro-scale. Our primary focus lies in materials modeling and simulation techniques.
 
 Current research endeavors within the group encompass the mechanics of ultra-strength materials, 3D-printed metal alloys, strengthening mechanisms in high-entropy alloys, and the advancement of multiscale modeling methodologies.
 
