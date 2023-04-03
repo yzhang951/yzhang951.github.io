@@ -12,4 +12,5 @@ pages: '118217'
 tags:
   - Molecular Dynamics
   - Machine Learning
+  - Nudged Elastic Band
 ---
