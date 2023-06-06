@@ -18,7 +18,7 @@ Principal Investigator
 ------
 ## Yin Zhang
 <br/>
-<img src='/images/bio-photo.jpg' width="200">
+<img src='/images/4.jpg' width="200">
 <br/>
 Assistant Professor<br/>
 Department of Mechanics and Engineering Science<br/>
