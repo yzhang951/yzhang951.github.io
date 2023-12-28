@@ -11,5 +11,4 @@ volume: '183'
 pages: '105520'
 tags:
   - Theory
-  - Nudged Elastic Band
 ---
