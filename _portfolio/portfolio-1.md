@@ -1,7 +1,5 @@
 ---
-title: "Under construction"
-excerpt: "Under construction<br><img src='/images/500x300.png'>"
+title: ""
+excerpt: "Group lunch, 2024 winter<br><img src='/images/Group_lunch_20240122161236.jpg'>"
 collection: portfolio
 ---
-
-Under construction.

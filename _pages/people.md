@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-<img src='/images/profile2.jpg' width="300"><br>
+<img src='/images/bio-photo.jpg' width="200"><br>
 ## Dr. Yin Zhang
 <a href="/cv/">Full CV</a>
 
@@ -18,7 +18,7 @@ author_profile: true
 
 ### Experience
 * 2021.09-2023.01 &emsp;Postdoctoral Associate, Massachusetts Institute of Technology <br>Advisor: Prof. Ju Li
-* 2023.01-now &emsp;&emsp;&ensp;Assistant Professor, Peking University
+* 2023.03-now &emsp;&emsp;&ensp;Assistant Professor, Peking University
 
 {% for post in site.people %}
   {% include archive-single.html %}
