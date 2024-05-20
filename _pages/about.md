@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-The Zhang Research Group, under the leadership of Professor Yin Zhang, conducts cutting-edge research within the Department of Mechanics and Engineering Science at the College of Engineering, Peking University.
+The Zhang Research Group, led by Professor Yin Zhang, conducts research within the Department of Mechanics and Engineering Science at the College of Engineering, Peking University.
 
 Our team specializes in simulating the mechanical properties of advanced engineering and energy materials, spanning from the nano to macro-scale. Our primary focus lies in materials modeling and simulation techniques.
 
@@ -25,7 +25,7 @@ Department of Mechanics and Engineering Science<br/>
 College of Engineering<br/>
 Peking University<br/>
 Beijing, China, 100871<br/>
-Office: Building Liushui 422<br/>
+Office: Building Enn (新奥工学大楼) 418<br/>
 Email: yinzhang@pku.edu.cn<br/>
 
 Selected Publications
