@@ -9,6 +9,7 @@ table {
   font-size: $type-size-4;
   border-collapse: collapse;
   border: 0px solid $light-gray;
+  border-style: none;
 
   & + table {
     margin-top: 1em;
@@ -29,6 +30,7 @@ th {
 
 td {
   padding: 0.5em;
+  border-style: none;
   border-bottom: 0px solid $light-gray;
   border-right: 0px solid $light-gray;
 }
