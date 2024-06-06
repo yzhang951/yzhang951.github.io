@@ -10,7 +10,7 @@ redirect_from:
 
 ## Additively manufactured alloys - crystal plasticity modeling
 <table border=0 cellpadding=2 cellspacing=8>
-<tr><td width=500><img src='images/Slide3.jpg' width=500></td><td width=500><img src='images/Slide4.jpg' width=500></td></tr>
+<tr><td width=500 border-style=none><img src='images/Slide3.jpg' width=500></td><td width=500 border-style=none><img src='images/Slide4.jpg' width=500></td></tr>
 </table>
 W. Chen, T. Voisin, Y. Zhang, J. Florien, C. M. Spadaccini, D. L. McDowell, T. Zhu and Y. M. Wang. Microscale residual stresses in additively manufactured stainless steel. Nature Communications, 10, 4338 (2019)<br>
 J. Ren, Y. Zhang, D. Zhao, Y. Chen, S. Guan, Y. Liu, L. Liu, S. Peng, F. Kong, J. D. Poplawsky, G. Gao, T. Voisin, K. An, Y. M. Wang, K. Y. Xie, T. Zhu and W. Chen. Strong yet ductile nanolamellar high-entropy alloys by additive manufacturing. Nature, 608, 62–68 (2022)
