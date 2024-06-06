@@ -8,7 +8,7 @@ author_profile: true
 {% include base_path %}
 
 <img src='/images/bio-photo.jpg' width="200"><br>
-## Dr. Yin Zhang
+## Dr. Yin Zhang 张寅
 <a href="/cv/">Full CV</a>
 
 
