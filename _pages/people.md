@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "People"
+title: "Principal Investigator"
 permalink: /people/
 author_profile: true
 ---
