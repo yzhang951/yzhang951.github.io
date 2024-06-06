@@ -1,6 +1,6 @@
 ---
 title: ""
-excerpt: "<h3>Jingya Zhang</h3><br>B.S., Beihang University<br>Research: High Entropy Alloys<br><img src='/images/profile.png'>"
+excerpt: "<h3>Jingya Zhang</h3><img src='/images/profile.png' width=150><br>B.S., Beihang University<br>Research: High Entropy Alloys<br>"
 collection: portfolio
 ---
 {% include base_path %}
