@@ -58,6 +58,7 @@
         <li><p>{{ post.citation }} <strong><span class="show_paper_citations" data="{{ post.gs_citation }}"></span></strong> (<a href="{{ post.paperurl }}">doi</a>)</p></li>
       {% else %}
         <li><p>{{ post.citation }} (<a href="{{ post.paperurl }}">doi</a>)</p></li>
+      {% endif %}
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }} </p>
     {% elsif post.paperurl %}
