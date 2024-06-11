@@ -1,7 +1,7 @@
 ---
 title: ""
 collection: publications
-permalink: /publication/2023-03-27-Acta Materialia
+permalink: /publication/2023-03-27-Microstructure-and-mechanical-behavior-of-additively-manufactured-CoCrFeMnNi-high-entropy-alloys-laser-directed-energy-deposition-versus-powder-bed-fusion
 date: 2023-03-27
 venue: 'Acta Materialia'
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S135964542300215X'
