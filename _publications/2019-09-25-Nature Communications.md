@@ -9,6 +9,7 @@ citation: ' W. Chen#,  T. Voisin#,  <u>Y. Zhang</u>#,  J. Forien,  C. Spadaccini
 authors: ' W. Chen,  T. Voisin,  <u>Y. Zhang</u>,  J. Forien,  C. Spadaccini,  D. McDowell,  T. Zhu,  Y. Wang, '
 volume: '10'
 pages: '4338'
+gs_citation: '2osOgNQ5qMEC'
 tags:
   - Crystal Plasticity
 ---

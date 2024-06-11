@@ -9,6 +9,7 @@ citation: ' D. Chen, <u>Y. Zhang</u>, S. Xu*, &quot;Solute-enhanced twin boundar
 authors: ' D. Chen, Y. Zhang, S. Xu '
 volume: '135'
 pages: '045104'
+gs_citation: 'HDshCWvjkbEC'
 tags:
   - Molecular Dynamics
 ---

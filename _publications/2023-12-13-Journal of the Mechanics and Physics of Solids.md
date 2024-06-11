@@ -9,6 +9,7 @@ citation: ' H. Sui, W. Liu, <u>Y. Zhang</u>, H. Duan*, &quot;Multi-scale spallat
 authors: ''
 volume: '183'
 pages: '105520'
+gs_citation: '-f6ydRqryjwC'
 tags:
   - Theory
 ---

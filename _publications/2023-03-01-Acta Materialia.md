@@ -9,6 +9,7 @@ citation: ' Z. Cheng#,  L. Bu#,  <u>Y. Zhang</u>,  H. Wu,  T. Zhu*,  L. Lu*, &qu
 authors: ' Z. Cheng,  L. Bu,  <u>Y. Zhang</u>,  H. Wu,  T. Zhu,  L. Lu, '
 volume: '246'
 pages: '118673'
+gs_citaion: 'mVmsd5A6BfQC'
 tags:
   - Theory
 ---

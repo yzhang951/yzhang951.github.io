@@ -9,6 +9,7 @@ citation: ' J. Guo,  <u>Y. Zhang</u>,  D. Chen*, &quot;Hydrogen-induced attracti
 authors: ' L. Bu,  Z. Cheng,  <u>Y. Zhang</u>,  H. Wu,  T. Zhu,  L. Lu, '
 volume: '90'
 pages: '071007'
+gs_citation: 'QIV2ME_5wuYC'
 tags:
   - Molecular Dynamics
   - Theory

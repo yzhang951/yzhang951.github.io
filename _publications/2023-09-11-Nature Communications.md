@@ -9,6 +9,7 @@ citation: ' Y. Lu#, Y. Chen#, Y. Zeng, <u>Y. Zhang</u>, D. Kong, X.  Li, T. Zhu*
 authors: ' Y. Lu, Y. Chen, Y. Zeng, Y. Zhang, D. Kong, X.  Li, T. Zhu, X. Li, S. Mao, Z. Zhang, L. Wang and X. Han '
 volume: '14'
 pages: '5540'
+gs_citation: 'qUcmZB5y_30C'
 tags:
   - Molecular Dynamics
 ---

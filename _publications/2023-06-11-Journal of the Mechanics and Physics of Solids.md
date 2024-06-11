@@ -9,6 +9,7 @@ citation: ' Y. Si, <u>Y. Zhang</u>, D. Chen, J. L. Wormald, B. S. Anglin, D. L. 
 authors: ''
 volume: '178'
 pages: '105359'
+gs_citation: 'IWHjjKOFINEC'
 tags:
   - Theory
   - Nudged Elastic Band

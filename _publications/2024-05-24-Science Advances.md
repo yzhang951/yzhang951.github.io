@@ -9,6 +9,7 @@ citation: ' J. Jiang, S. Chu, <u>Y. Zhang</u>*, G. Sun, J. Jin, X. Zeng, M. Chen
 authors: ''
 volume: '10'
 pages: 'eadn5946'
+gs_citation: 'e5wmG9Sq2KIC'
 tags:
   - Molecular Dynamics
 ---

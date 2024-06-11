@@ -9,6 +9,7 @@ citation: ' S. Chu,  P. Liu*,  <u>Y. Zhang</u>,  X. Wang,  S. Song,  T. Zhu*,  Z
 authors: ' S. Chu,  P. Liu,  <u>Y. Zhang</u>,  X. Wang,  S. Song,  T. Zhu,  Z. Zhang,  X. Han,  B. Sun,  M. Chen, '
 volume: '13'
 pages: '4151'
+gs_citation: 'M3ejUd6NZC8C'
 tags:
   - Molecular Dynamics
   - Monte Carlo

@@ -9,6 +9,7 @@ citation: ' <u>Y. Zhang</u>, Z. Cheng, T. Zhu*, L. Lu*, &quot;Mechanics of gradi
 authors: ''
 volume: '189'
 pages: '105719'
+gs_citation: '_Qo2XoVZTnwC'
 tags:
   - Gradient Plasticity
 ---

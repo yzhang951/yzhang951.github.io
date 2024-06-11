@@ -9,6 +9,7 @@ citation: ' L. Zhong, <u>Y. Zhang</u>, X. Wang, T. Zhu*, S. X. Mao*, &quot;Atomi
 authors: ' L. Zhong, Y. Zhang, X. Wang, T. Zhu, S. X. Mao '
 volume: '15'
 pages: '560'
+gs_citation: 'mB3voiENLucC'
 tags:
   - Molecular Dynamics
 ---

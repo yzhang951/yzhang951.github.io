@@ -9,6 +9,7 @@ citation: ' K. Ding#,  <u>Y. Zhang</u>#,  A. Birnbaum,  J. Michopoulos,  D. McDo
 authors: ' K. Ding,  <u>Y. Zhang</u>,  A. Birnbaum,  J. Michopoulos,  D. McDowell,  T. Zhu, '
 volume: '49'
 pages: '101503'
+gs_citation: 'MXK_kJrjxJIC'
 tags:
   - Gradient Plasticity
   - Finite Element

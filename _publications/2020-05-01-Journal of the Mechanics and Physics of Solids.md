@@ -9,6 +9,7 @@ citation: ' <u>Y. Zhang</u>,  W. Chen,  D. McDowell,  Y. M. Wang,  T. Zhu*, &quo
 authors: ' <u>Y. Zhang</u>,  W. Chen,  D. McDowell,  Y. Wang,  T. Zhu, '
 volume: '138'
 pages: '103899'
+gs_citation: 'zYLM7Y9cAGgC'
 tags:
   - Theory
   - Finite Element

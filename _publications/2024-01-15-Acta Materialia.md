@@ -9,6 +9,7 @@ citation: '<u>Y. Zhang</u>, Y. Dong*, J. Li*, &quot;Electrochemical shock and tr
 authors: ''
 volume: ''
 pages: '119620'
+gs_citation: 'hFOr9nPyWt4C'
 tags:
   - Theory
   - Finite Element

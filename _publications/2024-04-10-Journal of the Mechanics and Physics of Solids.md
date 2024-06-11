@@ -9,6 +9,7 @@ citation: ' F. Zhao, W. Liu, X. Yi, <u>Y. Zhang</u>*, H. Duan*, &quot;Multiscale
 authors: ''
 volume: '187'
 pages: '105640'
+gs_citation: 'TQgYirikUcIC'
 tags:
   - Theory
   - Nudged Elastic Band

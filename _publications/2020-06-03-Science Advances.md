@@ -9,6 +9,7 @@ citation: ' J. Wang*,  Z. Zeng,  M. Wen,  Q. Wang,  D. Chen,  <u>Y. Zhang</u>,  
 authors: ' J. Wang,  Z. Zeng,  M. Wen,  Q. Wang,  D. Chen,  <u>Y. Zhang</u>,  P. Wang,  H. Wang,  Z. Zhang,  S. Mao,  T. Zhu, '
 volume: '6'
 pages: 'eaay2792'
+gs_citation: 'W7OEmFMy1HYC'
 tags:
   - Molecular Dynamics
 ---

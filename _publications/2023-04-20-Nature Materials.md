@@ -9,6 +9,7 @@ citation: 'L. Huang#, D. Chen#, D. Xie*, S. Li, <u>Y. Zhang</u>, T. Zhu, D. Raab
 authors: ''
 volume: '22'
 pages: '710-716'
+gs_citation: '7PzlFSSx8tAC'
 tags:
   - Molecular Dynamics
   - Nudged Elastic Band

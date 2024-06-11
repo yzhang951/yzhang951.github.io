@@ -9,6 +9,7 @@ citation: ' S. Stangebye,  <u>Y. Zhang</u>,  S. Gupta,  T. Zhu,  O. Pierron,  J.
 authors: ' S. Stangebye,  <u>Y. Zhang</u>,  S. Gupta,  T. Zhu,  O. Pierron,  J. Kacher, '
 volume: '222'
 pages: '117441'
+gs_citation: '8k81kl-MbHgC'
 tags:
   - Molecular Dynamics
   - Theory

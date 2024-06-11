@@ -9,6 +9,7 @@ citation: ' Y. Li,  X. Li,  C. Du,  H. Sun,  <u>Y. Zhang</u>,  Q. Liu,  T. Yang,
 authors: ' Y. Li,  X. Li,  C. Du,  H. Sun,  <u>Y. Zhang</u>,  Q. Liu,  T. Yang,  J. Zhao,  C. Delmas,  S. Harris,  H. Chen,  Q. Huang,  Y. Tang,  L. Zhang,  T. Zhu,  J. Huang, '
 volume: '6'
 pages: '3960-3969'
+gs_citation: '5nxA0vEk-isC'
 tags:
   - Molecular Dynamics
 ---

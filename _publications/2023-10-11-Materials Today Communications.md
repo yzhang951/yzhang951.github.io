@@ -9,6 +9,7 @@ citation: ' Y. Chen, <u>Y. Zhang</u> and D. Chen*, &quot;Hydrogen-enhanced homog
 authors: ' Y. Chen, Y. Zhang, D. Chen '
 volume: '37'
 pages: '107289'
+gs_citation: 'hC7cP41nSMkC'
 tags:
   - Molecular Dynamics
   - Nudged Elastic Band

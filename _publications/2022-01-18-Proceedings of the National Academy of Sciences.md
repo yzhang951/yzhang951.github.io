@@ -9,6 +9,7 @@ citation: ' Z. Cheng#,  L. Bu#,  <u>Y. Zhang</u>#,  H. Wu,  T. Zhu*,  H. Gao*,  
 authors: ' Z. Cheng,  L. Bu,  <u>Y. Zhang</u>,  H. Wu,  T. Zhu,  H. Gao,  L. Lu, '
 volume: '119'
 pages: 'e2116808119'
+gs_citation: 'Zph67rFs4hoC'
 tags:
   - Gradient Plasticity
   - Theory

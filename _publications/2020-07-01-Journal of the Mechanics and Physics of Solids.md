@@ -9,6 +9,7 @@ citation: ' <u>Y. Zhang</u>,  Z. Cheng,  L. Lu,  T. Zhu*, &quot;Strain gradient 
 authors: ' <u>Y. Zhang</u>,  Z. Cheng,  L. Lu,  T. Zhu, '
 volume: '140'
 pages: '103946'
+gs_citation: 'Y0pCki6q_DkC'
 tags:
   - Gradient Plasticity
   - Theory

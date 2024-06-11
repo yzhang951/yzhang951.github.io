@@ -9,6 +9,7 @@ citation: ' J. Zhao,  Y. Tang,  Q. Dai,  C. Du,  <u>Y. Zhang</u>,  D. Xue,  T. C
 authors: ' J. Zhao,  Y. Tang,  Q. Dai,  C. Du,  <u>Y. Zhang</u>,  D. Xue,  T. Chen,  J. Chen,  B. Wang,  J. Yao,  N. Zhao,  Y. Li,  S. Xia,  X. Guo,  S. Harris,  L. Zhang,  S. Zhang,  T. Zhu,  J. Huang, '
 volume: '5'
 pages: '524-532'
+gs_citation: 'hqOjcs7Dif8C'
 tags:
   - Theory
   - Finite Element

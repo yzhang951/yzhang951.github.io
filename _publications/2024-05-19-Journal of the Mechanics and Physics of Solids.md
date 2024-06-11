@@ -9,6 +9,7 @@ citation: ' B. Wang, <u>Y. Zhang</u>, D. L. McDowell, T. Zhu*, &quot;Modeling of
 authors: ''
 volume: '188'
 pages: '105691'
+gs_citation: 'R3hNpaxXUhUC'
 tags:
   - Finite Element
   - Crystal Plasticity
