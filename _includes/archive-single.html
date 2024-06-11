@@ -55,7 +55,7 @@
     {% if post.citation and post.paperurl %}
       <!-- <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p> -->
       {% if post.gs_citation %}
-        <li><p>{{ post.citation }} {{ post.gs_citation }} <strong><span class="show_paper_citations" data="{{ post.gs_citation }}"></span></strong> (<a href="{{ post.paperurl }}">doi</a>)</p></li>
+        <li><p>{{ post.citation }} <strong><span class="show_paper_citations" data="{{ post.gs_citation }}"></span></strong> (<a href="{{ post.paperurl }}">doi</a>)</p></li>
       {% else %}
         <li><p>{{ post.citation }} (<a href="{{ post.paperurl }}">doi</a>)</p></li>
       {% endif %}
