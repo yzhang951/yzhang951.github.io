@@ -9,7 +9,6 @@ You can also find my articles on my <a href="https://scholar.google.com/citation
 <br><a href="/tags/">Publications by Tags</a>
 
 {% include base_path %}
-{% include scripts.html %}
 (# equal contribution, * corresponding author)
 <ol reversed>
 {% for post in site.publications reversed %}
