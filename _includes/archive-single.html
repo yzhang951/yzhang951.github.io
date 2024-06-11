@@ -54,7 +54,11 @@
     
     {% if post.citation and post.paperurl %}
       <!-- <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p> -->
-      <li><p>{{ post.citation }} (<a href="{{ post.paperurl }}">doi</a>)</p></li>
+      {% if post.gs_citation %}
+        <li><p>{{ post.citation }} (<a href="{{ post.paperurl }}" target="_blank">doi</a>) <a href='https://scholar.google.com/citations?view_op=view_citation&hl=en&user=23XDhOwAAAAJ&citation_for_view=23XDhOwAAAAJ:{{ post.gs_citation }}' target="_blank"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyzhang951%2Fyzhang951.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&label=citations&query=$.publications[%2723XDhOwAAAAJ%3A{{ post.gs_citation }}%27].num_citations&labelColor=f6f6f6&color=9cf&style=flat"></a></p></li>
+      {% else %}
+        <li><p>{{ post.citation }} (<a href="{{ post.paperurl }}" target="_blank">doi</a>)</p></li>
+      {% endif %}
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }} </p>
     {% elsif post.paperurl %}
