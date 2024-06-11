@@ -9,6 +9,7 @@
 locale                   : "en-US"
 title                    : "Zhang Research Group"
 title_separator          : "-"
+google_scholar_stats_use_cdn : true
 name                     : &name "Yin Zhang"
 description              : &description "Dr. Zhang's Reasearch Group Website"
 url                      : https://yzhang951.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -146,6 +147,7 @@ exclude:
   - package.json
   - tmp
   - vendor
+  - google_scholar_crawler
 keep_files:
   - .git
   - .svn
