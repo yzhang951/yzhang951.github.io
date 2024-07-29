@@ -9,7 +9,7 @@ citation: ' Z. Zhu*,  S. Xu, Z. Wang, X. Yan, G. Xu, Y. Huang, Y. Wu, <u>Y. Zhan
 authors: ' Z. Zhu,  S. Xu, Z. Wang, X. Yan, G. Xu, Y. Huang, Y. Wu, <u>Y. Zhang</u>, J. Li*, '
 volume: '17'
 pages: 'D4EE00722K'
-gs_citation: ''
+gs_citation: 'RHpTSmoSYBkC'
 tags:
   - Theory
   - Finite Element
