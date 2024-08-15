@@ -9,7 +9,7 @@ citation: ' Y. Zhang#, C. He#, Q. Yu#, X. Li, X. Wang, <u>Y. Zhang</u>, J. Wang,
 authors: '  Y. Zhang, C. He, Q. Yu, X. Li, X. Wang, Y. Zhang, J. Wang, C. Jiang, Y. Jia, X-C. Zhang, B. Sun, R. Ritchie, S-T Tu'
 volume: '15'
 pages: '6917'
-gs_citation: ''
+gs_citation: '4JMBOYKVnBMC'
 tags:
   - Molecular Dynamics
 ---
