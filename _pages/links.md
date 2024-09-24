@@ -17,3 +17,5 @@ redirect_from:
 <br><br>
 <a href="http://www.zhugroup.gatech.edu/" target="_blank">Zhu Group</a><br>
 <a href="http://li.mit.edu/" target="_blank">Li Group</a><br>
+<a href="https://missing.csail.mit.edu/" target="_blank">Linux shell 101</a><br>
+<a href="https://www.runoob.com/git/git-tutorial.html/" target="_blank">Git 101</a><br>
