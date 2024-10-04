@@ -9,7 +9,7 @@ citation: ' F. Zhao, W. Liu, <u>Y. Zhang</u>*, H. Duan*, &quot;The hierarchical 
 authors: ''
 volume: ''
 pages: ''
-gs_citation: ''
+gs_citation: 'r0BpntZqJG4C'
 tags:
   - Nudged Elastic Band
 ---
