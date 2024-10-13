@@ -1,5 +1,5 @@
 ---
-title: "Theoretical Mechanics, 2024 Fall"
+title: "Introduction to SSH"
 collection: teaching
 type: "Group Tutorials"
 permalink: /teaching/2024-fall-teaching-3
@@ -7,7 +7,8 @@ venue: "Peking University"
 date: 2024-10-13
 location: "Beijing, China"
 ---
-# Introduction to SSH
+
+#
 
 ## 1.密钥对的生成
 
