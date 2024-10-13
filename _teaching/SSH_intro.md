@@ -24,8 +24,8 @@ ssh-keygen -t rsa
 
 ```bash
 ssh-keygen -t rsa -f ~/.ssh/01_key -C "Key for Zhang01"
-#为zhang01这台服务器生成一个名为01_key的密钥对，在~/.ssh/下应该会出现01_key和01_key.pub
 ```
+为zhang01这台服务器生成一个名为01_key的密钥对，在~/.ssh/下应该会出现01_key和01_key.pub
 
 **-t rsa** 选项指定生成 **RSA** 类型的密钥对。
 
@@ -55,8 +55,8 @@ ssh-keygen -t rsa -f ~/.ssh/01_key -C "Key for Zhang01"
 
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub username@server_ip
-#为zhang01这台服务器生成一个名为01_key的密钥对，在~/.ssh/下应该会出现01_key和01_key.pub
 ```
+为zhang01这台服务器生成一个名为01_key的密钥对，在~/.ssh/下应该会出现01_key和01_key.pub
 
 其中， **~/.ssh/id_rsa.pub** 是本地公钥文件的路径，**username** 是远程服务器的用户名，**server_ip** 是服务器的IP地址。
 
@@ -69,8 +69,8 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub username@server_ip
 
 ```bash
 scp ~/.ssh/id_rsa.pub username@server_ip:/tmp/
-#这将把本地公钥文件id_rsa.pub复制到远程服务器的/tmp/目录下。然后可以在远程服务器上使用适当的命令将其移动到正确的位置。
 ```
+这将把本地公钥文件id_rsa.pub复制到远程服务器的/tmp/目录下。然后可以在远程服务器上使用适当的命令将其移动到正确的位置。
 
 这个命令还需要重新编写服务器端端 **~/.ssh/authorized_keys** 文件，会比较麻烦。但是scp命令多用于传输文件，故在这里提及。
 
