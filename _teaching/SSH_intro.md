@@ -8,7 +8,6 @@ date: 2024-10-13
 location: "Beijing, China"
 ---
 
-#
 
 ## 1.密钥对的生成
 
@@ -16,16 +15,16 @@ location: "Beijing, China"
 
 下列操作将在 **用户目录下.ssh文件夹** 下生成一个名为 **id_rsa** 的密钥对，即 **~/.ssh/id_rsa.pub** 和 **~/.ssh/id_rsa**
 
-```bash
+<pre>
 ssh-keygen -t rsa 
-```
+</pre>
 
 因为课题组服务器数量较多，所以如果想建立多个密钥对并进行分类管理时，可以用以下方式创建密钥对
 
-```bash
+<pre>
 ssh-keygen -t rsa -f ~/.ssh/01_key -C "Key for Zhang01"
 #为zhang01这台服务器生成一个名为01_key的密钥对，在~/.ssh/下应该会出现01_key和01_key.pub
-```
+</pre>
 
 **-t rsa** 选项指定生成 **RSA** 类型的密钥对。
 
