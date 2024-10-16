@@ -12,11 +12,11 @@ location: "Beijing, China"
 Crystal plasticity finite element method (CPFEM) is a powerful tool in the field of mechanics and materials sciences.
 It enables the simulation and analysis of the mechanical behavior of crystalline materials at the micro - and meso - scales.
 
-Usually, the crystal plasticity model is implemented in commerical finite element softwares through a user subroutine UMAT/VUMAT. 
+Usually, the crystal plasticity model is implemented in commercial finite element software through a user subroutine UMAT/VUMAT. 
 In Abaqus, users can write subroutines in Fortran programming languages to define the constitutive behaviors based on crystal plasticity theories. 
-Basic equations and VUMAT user subroutine for Abaqus/Explict can be found at <a href='https://github.com/yzhang951/CPFEM-VUMAT/tree/main/Base' target="_blank">https://github.com/yzhang951/CPFEM-VUMAT/tree/main/Base</a>.
+Basic equations and VUMAT user subroutine for Abaqus/Explicit can be found at <a href='https://github.com/yzhang951/CPFEM-VUMAT/tree/main/Base' target="_blank">https://github.com/yzhang951/CPFEM-VUMAT/tree/main/Base</a>.
 
-We decide to use Explicit and VUMAT, because it does not require complex tangent modulus caculation, making it simple for fast model development. 
+We decide to use Explicit and VUMAT, because it does not require complex tangent modulus calculations, making it simple for fast model development. 
 
 ## Step 1: Download
 Download CPFEM VUMAT user subroutine from GitHub. 
@@ -27,7 +27,7 @@ cd CPFEM-VUMAT/Base
 The **vumat.for** is the main VUMAT Fortran file, **Job-1.inp** is the input file for Abaqus, and **aeuler** is the Euler angles for each element.
 
 ## Step 2: Modify Abaqus .inp file
-If you are familiar with Abaqus, the input file shoud be pretty self-explanatory. 
+If you are familiar with Abaqus, the input file should be pretty self-explanatory. 
 You can tweak some parameters in **Job-1.inp**, such as material properties, strain rate, loading scheme, etc..
 ```
 *User Material, type=MECHANICAL, constants=18
@@ -37,15 +37,15 @@ You can tweak some parameters in **Job-1.inp**, such as material properties, str
 ```
 The meaning of these material properties can be found at **Assign props() array to logical variable names** section in **vumat.for**.
 
-Another important quantantity is the density here, as we are using mass scaling to boost the simulation speed. 
+Another important quantity is the density here, as we are using mass scaling to boost the simulation speed. 
 The simulation timestep would be determined by the density \\(\rho\\) through \\(\Delta t\propto \Delta x\sqrt{\rho /E}\\), where *E* is the Young's modulus.
 
 ## Step 3: Modify **vumat.for** file
-Two important parameters to change in the **vumat.for** are **num_ele** and **FILE1**.The first one is the number of element in the simulations, if you change the mesh in the input file please modify this one accordingly. 
+Two important parameters to change in the **vumat.for** are **num_ele** and **FILE1**.The first one is the number of elements in the simulations, if you change the mesh in the input file please modify this one accordingly. 
 The other one **FILE1** is the path of Euler angle file. Both absolute or relative path would be fine here.
 
 ### Caution
-There are two **num_ele** in the code, one on line 44 and an other on line 114.
+There are two **num_ele** in the code, one on line 44 and another on line 114.
 
 The code is designed for single crystal and polycrystals, therefore there are two ways to read in the Euler angles at line 247.
 ```
@@ -65,7 +65,8 @@ tail -f Job-1.sta
 This command could be used to monitor the simulation process.
 
 ## Step 5: Postprocessing
-Python interface is very useful to postprocess the Abaqus output. Here is an example I used to extract elastic lattice strain.
+Python interface is very useful to postprocess the Abaqus output. Here is an example I used to extract elastic lattice strain for DP-HEA project.
+The script cannot be used directly here due to different defination of Set and number of elements. Please modify accordingly.
 ```python
 from odbAccess import *
 import numpy as np
