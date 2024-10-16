@@ -4,7 +4,7 @@ collection: teaching
 type: "Tutorial"
 permalink: /teaching/2024-fall-teaching-4
 excerpt: ""
-venue: "written by Prof. Zhang"
+venue: "by Prof. Zhang"
 date: 2024-10-16
 location: "Beijing, China"
 ---
@@ -12,7 +12,11 @@ location: "Beijing, China"
 Crystal plasticity finite element method (CPFEM) is a powerful tool in the field of mechanics and materials sciences.
 It enables the simulation and analysis of the mechanical behavior of crystalline materials at the micro - and meso - scales.
 
-Usually, the crystal plasticity model is implemented in commerical finite element softwares through a user subroutine UMAT/VUMAT. In Abaqus, users can write subroutines in Fortran programming languages to define the constitutive behaviors based on crystal plasticity theories. Basic equations and VUMAT user subroutine for Abaqus/Explict can be found at https://github.com/yzhang951/CPFEM-VUMAT/tree/main/Base. We decide to use Explicit and VUMAT, because it does not require complex tangent modulus caculation, making it simple for fast model development. 
+Usually, the crystal plasticity model is implemented in commerical finite element softwares through a user subroutine UMAT/VUMAT. 
+In Abaqus, users can write subroutines in Fortran programming languages to define the constitutive behaviors based on crystal plasticity theories. 
+Basic equations and VUMAT user subroutine for Abaqus/Explict can be found at <a href='https://github.com/yzhang951/CPFEM-VUMAT/tree/main/Base' target="_blank">https://github.com/yzhang951/CPFEM-VUMAT/tree/main/Base</a>.
+
+We decide to use Explicit and VUMAT, because it does not require complex tangent modulus caculation, making it simple for fast model development. 
 
 ## Step 1: Download
 Download CPFEM VUMAT user subroutine from GitHub. 
@@ -34,7 +38,7 @@ You can tweak some parameters in **Job-1.inp**, such as material properties, str
 The meaning of these material properties can be found at **Assign props() array to logical variable names** section in **vumat.for**.
 
 Another important quantantity is the density here, as we are using mass scaling to boost the simulation speed. 
-The simulation timestep would be determined by the density $\rho$ through $\Delta t\propto \Delta x\sqrt{\rho /E}$, where *E* is the Young's modulus.
+The simulation timestep would be determined by the density \\(\rho\\) through \\(\Delta t\propto \Delta x\sqrt{\rho /E}\\), where *E* is the Young's modulus.
 
 ## Step 3: Modify **vumat.for** file
 Two important parameters to change in the **vumat.for** are **num_ele** and **FILE1**.The first one is the number of element in the simulations, if you change the mesh in the input file please modify this one accordingly. 
@@ -44,7 +48,7 @@ The other one **FILE1** is the path of Euler angle file. Both absolute or relati
 There are two **num_ele** in the code, one on line 44 and an other on line 114.
 
 The code is designed for single crystal and polycrystals, therefore there are two ways to read in the Euler angles at line 247.
-```Fortran
+```
 c--------------- Read in Euler angles from external file ------------
 c--- Important!: comment this section for poly xtal simulations -----
 c--- the Euler angles will be read from file 'aeuler' through VUSDFLD
@@ -54,7 +58,7 @@ c--- the Euler angles will be read from file 'aeuler' through VUSDFLD
 ```
 
 ## Step 4: Run simulation
-You can execute the **run.sh** to start the simulations. The double precision is mandatory here to keep the consistence as we use **double** in **vumat.for**.
+You can execute the **run.sh** to start the simulations. The double precision is mandatory here to keep the consistence as we use **real*8** in **vumat.for**.
 ```bash
 tail -f Job-1.sta
 ```
@@ -62,7 +66,7 @@ This command could be used to monitor the simulation process.
 
 ## Step 5: Postprocessing
 Python interface is very useful to postprocess the Abaqus output. Here is an example I used to extract elastic lattice strain.
-```Python
+```python
 from odbAccess import *
 import numpy as np
 import math as mt
