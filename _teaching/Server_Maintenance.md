@@ -3,6 +3,7 @@ title: "Group Server Maintenance Handbook"
 collection: teaching
 type: "Tutorials"
 permalink: /teaching/2024-fall-teaching-3
+excerpt: ""
 venue: "written by Yifeng Xie"
 date: 2024-10-15
 location: "Beijing, China"
