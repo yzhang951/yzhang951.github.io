@@ -1,7 +1,7 @@
 ---
 title: "Group Server Maintenance Handbook"
 collection: teaching
-type: "Tutorials"
+type: "Tutorial"
 permalink: /teaching/2024-fall-teaching-3
 excerpt: ""
 venue: "written by Yifeng Xie"

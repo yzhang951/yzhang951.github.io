@@ -1,77 +1,215 @@
 ---
 title: "Crystal Plasticity 101"
 collection: teaching
-type: "Tutorials"
+type: "Tutorial"
 permalink: /teaching/2024-fall-teaching-4
 excerpt: ""
 venue: "written by Prof. Zhang"
 date: 2024-10-16
 location: "Beijing, China"
 ---
-## Rate Dependent Crystal Plasticity Model
+# Rate Dependent Crystal Plasticity Model
+Crystal plasticity finite element method (CPFEM) is a powerful tool in the field of mechanics and materials sciences.
+It enables the simulation and analysis of the mechanical behavior of crystalline materials at the micro - and meso - scales.
 
-A cyclic CP model is developed to represent the elastic-viscoplastic behavior of crystal grains under cyclic loading. The model extends the CP framework of Asaro and Needleman (Asaro and Needleman, 1985) and Kalidindi et al. (Kalidindi et al., 1992) to account for nonlinear kinematic hardening at the slip system level, akin to the J2 kinematic hardening model by Chaboche (Chaboche, 1986). Despite the viscoplastic formulation used, the strain rate sensitivity is small for the coarse-grained stainless steel studied in this work. Consequently, the simulated cyclic viscoplastic response approaches its rate-independent counterpart from the cyclic J2 model. 
+Usually, the crystal plasticity model is implemented in commerical finite element softwares through a user subroutine UMAT/VUMAT. In Abaqus, users can write subroutines in Fortran programming languages to define the constitutive behaviors based on crystal plasticity theories. Basic equations and VUMAT user subroutine for Abaqus/Explict can be found at https://github.com/yzhang951/CPFEM-VUMAT/tree/main/Base. We decide to use Explicit and VUMAT, because it does not require complex tangent modulus caculation, making it simple for fast model development. 
 
-In the continuum mechanics framework for finite deformation, the deformation gradient tensor F can be decomposed into its elastic ${{\mathbf{F}}^{\text{e}}}$ and plastic ${{\mathbf{F}}^{\text{p}}}$ parts such that $\mathbf{F}={{\mathbf{F}}^{\text{e}}}{{\mathbf{F}}^{\text{p}}}$. The rate of plastic deformation gradient is given by 
+## Step 1: Download
+Download CPFEM VUMAT user subroutine from GitHub. 
+```bash
+git clone https://github.com/yzhang951/CPFEM-VUMAT.git
+cd CPFEM-VUMAT/Base
+```
+The **vumat.for** is the main VUMAT Fortran file, **Job-1.inp** is the input file for Abaqus, and **aeuler** is the Euler angles for each element.
 
-${{\mathbf{\dot{F}}}^{\text{p}}}={{\mathbf{L}}^{\text{p}}}{{\mathbf{F}}^{\text{p}}}$	(1)
+## Step 2: Modify Abaqus .inp file
+If you are familiar with Abaqus, the input file shoud be pretty self-explanatory. 
+You can tweak some parameters in **Job-1.inp**, such as material properties, strain rate, loading scheme, etc..
+```
+*User Material, type=MECHANICAL, constants=18
+204.6E3, 137.7E3 , 126.2E3, 45.0, 90.0, 0.0, 0.001 , 0.02,
+50.0   , 1000.0  , 70.0   , 4.0 , 1.0 , 1.4, 60.0E3, 1.0E3,
+4.0E3  , 100.0
+```
+The meaning of these material properties can be found at **Assign props() array to logical variable names** section in **vumat.for**.
 
-The plastic velocity gradient ${{\mathbf{L}}^{\text{p}}}$ is 
+Another important quantantity is the density here, as we are using mass scaling to boost the simulation speed. 
+The simulation timestep would be determined by the density $\rho$ through $\Delta t\propto \Delta x\sqrt{\rho /E}$, where *E* is the Young's modulus.
 
-${{\mathbf{L}}^{\text{p}}}=\sum\limits_{\alpha }{{{{\dot{\gamma }}}^{\alpha }}\mathbf{S}_{0}^{\alpha }}$	(2)
+## Step 3: Modify **vumat.for** file
+Two important parameters to change in the **vumat.for** are **num_ele** and **FILE1**.The first one is the number of element in the simulations, if you change the mesh in the input file please modify this one accordingly. 
+The other one **FILE1** is the path of Euler angle file. Both absolute or relative path would be fine here.
 
-where $\mathbf{S}_{0}^{\alpha }=\mathbf{m}_{0}^{\alpha }\otimes \mathbf{n}_{0}^{\alpha }$, with $\mathbf{m}_{0}^{\alpha }$ and $\mathbf{n}_{0}^{\alpha }$ being the unit vectors corresponding the slip direction and slip plane normal direction of slip system α in the reference configuration, respectively, and ${{\dot{\gamma }}^{\alpha }}$ is the plastic shearing rate on slip system α. Each fcc grain consists of 12 {111}<110> slip systems.
+### Caution
+There are two **num_ele** in the code, one on line 44 and an other on line 114.
 
-The applied resolved shear stress (RSS) acting on slip system α is expressed as 
+The code is designed for single crystal and polycrystals, therefore there are two ways to read in the Euler angles at line 247.
+```Fortran
+c--------------- Read in Euler angles from external file ------------
+c--- Important!: comment this section for poly xtal simulations -----
+c--- the Euler angles will be read from file 'aeuler' through VUSDFLD
+           psi_t(1) = psi_ang*PI/180.0
+           psi_t(2) = theta_ang*PI/180.0
+           psi_t(3) = phi_ang*PI/180.0
+```
 
-${{\tau }^{\alpha }}=({{\mathbf{C}}^{\text{e}}}{{\mathbf{T}}^{\text{PK-}2}}):\mathbf{S}_{0}^{\alpha }$	(3)
+## Step 4: Run simulation
+You can execute the **run.sh** to start the simulations. The double precision is mandatory here to keep the consistence as we use **double** in **vumat.for**.
+```bash
+tail -f Job-1.sta
+```
+This command could be used to monitor the simulation process.
 
-In Eq. (3), \\[{{\mathbf{C}}^{\text{e}}}={{\mathbf{F}}^{{{\text{e}}^{\text{T}}}}}{{\mathbf{F}}^{\text{e}}}\\] is the right Cauchy-Green tensor. The elastic strain tensor is defined as,
- \\[{{\mathbf{E}}^{\text{e}}}=\frac{1}{2}\left( {{\mathbf{F}}^{{{\text{e}}^{\text{T}}}}}{{\mathbf{F}}^{\text{e}}}-\mathbf{I} \right)\\]	(4)
-The second Piola-Kirchhoff stress tensor can be calculated from elastic stiffness tensor and elastic strain,
-${{\mathbf{T}}^{\text{PK-}2}}=\mathbf{C}:{{\mathbf{E}}^{\text{e}}}$	(5)
-The 2nd PK stress relates to the Cauchy stress σ through elastic deformation tensor,
-${{\mathbf{T}}^{\text{PK-}2}}={{\mathbf{F}}^{{{\text{e}}^{-1}}}}\left\{ (\text{det}{{\mathbf{F}}^{\text{e}}})\sigma  \right\}{{\mathbf{F}}^{{{\text{e}}^{-\text{T}}}}}$	(6)
-$\mathbf{\sigma }=\frac{1}{\text{det}{{\mathbf{F}}^{\text{e}}}}{{\mathbf{F}}^{\text{e}}}{{\mathbf{T}}^{\text{PK-}2}}{{\mathbf{F}}^{{{\text{e}}^{\text{T}}}}}$	(7)
-Noted that this Cauchy stress is defined in the laboratory basis of the current configuration. The Abaqus VUMAT actually need the Cauchy stress defined in the corational basis.
-$\mathbf{\sigma }={{\mathbf{R}}^{\text{T}}}\mathbf{\sigma R}$	(8)
+## Step 5: Postprocessing
+Python interface is very useful to postprocess the Abaqus output. Here is an example I used to extract elastic lattice strain.
+```Python
+from odbAccess import *
+import numpy as np
+import math as mt
 
-where R comes from the RU decomposition of the total deformation gradient F. 
-The elastic stretch is usually infinitesimal for metallic materials, so that ${{\tau }^{\alpha }}\approx {{\mathbf{T}}^{\text{PK-}2}}:\mathbf{S}_{0}^{\alpha }$ (Kalidindi et al., 1992).
-Two resolved back stress components are introduced to account for kinematic hardening at the slip system level. The rate of the resolved back stress is  
-\\[\dot{B}_{i}^{\alpha }={{\tilde{C}}_{i}}{{\dot{\gamma }}^{\alpha }}-{{\tilde{D}}_{i}}B_{i}^{\alpha }\left| {{{\dot{\gamma }}}^{\alpha }} \right|,\begin{matrix}
-   {} & {}  \\
-\end{matrix}i=1,\text{ }2\\]	(9)
+#Reading output database
+odbpath = 'J_8000.odb'
+odb = openOdb(path=odbpath)
+assembly = odb.rootAssembly
 
-where \\[B_{i}^{\alpha }\\] is the i-th component of the resolved back stress on slip system α , and \\[{{\tilde{C}}_{i}}\\] and \\[{{\tilde{D}}_{i}}\\] are the material parameters. While Eq. (9) is sufficient to capture the cyclic plastic strain response of stainless steel,  Hennessey et al. (Hennessey et al., 2017) showed that for 7075-T6 Al it was necessary to employ a nonlinear dynamic recovery term as opposed to the linear one in Eq. (10) to accurately represent the cyclic plastic strain response. The effective RSS on slip system α is 
-$\tau _{\text{eff}}^{\alpha }={{\tau }^{\alpha }}-\sum\limits_{i}{B_{i}^{\alpha }}$	(10)
+print 'Model data for ODB: ', odbpath
 
-The plastic shearing rate ${{\dot{\gamma }}^{\alpha }}$ on slip system α is
+#Reading history output data
+step = odb.steps['Step-1']
+Node_Start = 1
+Node_End = 9241
 
-${{\dot{\gamma }}^{\alpha }}={{\dot{\gamma }}_{\text{0}}}{{\left| \frac{\tau _{\text{eff}}^{\alpha }}{{{s}^{\alpha }}} \right|}^{\frac{1}{m}}}\sgn (\tau _{\text{eff}}^{\alpha })$	(11)
+U = np.zeros(201)
+F = np.zeros(201)
 
-where ${{\dot{\gamma }}^{\alpha }}$ is the reference shearing rate, m is the slip rate sensitivity, and ${{s}^{\alpha }}$ is the non-directional slip resistance on slip system α. The slip resistance ${{s}^{\alpha }}$, with an initial value $s_{0}^{\alpha }$, evolves according to
+for i in range(Node_Start,Node_End+21,21):
+    node = 'Node PART-1-1.' + str(i)
+    region = step.historyRegions[node]
+    u1data = region.historyOutputs['U2'].data
+    f1data = region.historyOutputs['RF2'].data
+    j = 0
+    for time,force in f1data:
+        F[j] = F[j] + force
+        j = j + 1
 
-${{\dot{s}}^{\alpha }}=\sum\limits_{\beta }{{{h}^{\alpha \beta }}}\left| {{{\dot{\gamma }}}^{\alpha }} \right|$	(12)
+j = 0
+for time,disp in u1data:
+    U[j] = disp      
+    j = j + 1
 
-The matrix of the strain hardening rate is 
+dispFile = open('fitting.dat','w')
 
-${{\left[ {{h}^{\alpha \beta }} \right]}_{12\times 12}}=\left\{ \begin{matrix}
-{{h}^{\beta }}\begin{matrix}
-{} & {} & \text{ if }\alpha =\beta   \\
-\end{matrix}  \\
-q{{h}^{\beta }}\begin{matrix}
-{} & {} & \text{if }\alpha \ne \beta   \\
-\end{matrix}  \\
-\end{matrix} \right.$	(13)
+for i in range(len(U)):
+    j = i 
+    dispFile.write("%10.4E  %10.4E\n" % ((U[j]/20)*100,F[j]/1E6/400*(1+U[j]/20)))
+dispFile.close()
+#######################################################################
+#######################################################################
+#######                                                         #######
+#######            Lattice strain calculations!                 #######
+#######                                                         #######
+#######################################################################
+#######################################################################
+print('\nExtracting lattice strain along LD')
 
-where q is the latent hardening coefficient taken as 1.4 (Asaro and Needleman, 1985). Some literature also use 1.0 for coplanar slip system and 1.4 for non-coplanar systems. 
-${{h}^{\beta }}$ is the single slip hardening rate, which is taken as (Kalidindi et al., 1992)  
-${{h}^{\beta }}={{h}_{0}}{{\left\{ 1-\frac{{{s}^{\beta }}}{{{s}_{\text{sat}}}} \right\}}^{{{a}_{0}}}}$	(14)
+LD = []
+LD.append(assembly.elementSets['FCC-LD200'])
+LD.append(assembly.elementSets['FCC-LD220'])
+LD.append(assembly.elementSets['FCC-LD111'])
+LD.append(assembly.elementSets['FCC-LD311'])
+LD.append(assembly.elementSets['FCC-LD331'])
+LD.append(assembly.elementSets['BCC-LD200'])
+LD.append(assembly.elementSets['BCC-LD110'])
+LD.append(assembly.elementSets['BCC-LD211'])
+LD.append(assembly.elementSets['BCC-LD321'])
 
-where ${{h}_{0}}$ is the initial hardening rate, ${{a}_{0}}$ is the hardening exponent and ${{s}_{\text{sat}}}$ is the saturated non-directional slip resistance. These hardening parameters are taken to be identical for all 12 {111}<101> slip systems. The CP model is implemented by writing an Abaqus/Explicit user subroutine VUMAT (ABAQUS/Explicit, 2009).
+fp = open('lattice_strain_LD.dat','w')
+for i in odb.steps['Step-1'].frames:
+#    print('\nExtracting from Frame:\t'+str(i.frameId))
+    # calculate the average stress
+    stress = 0.0
+    x = i.fieldOutputs['S'].values
+    for j in x:
+        stress = stress + j.data[1]
+    stress = stress/len(x)/1E6
+    fp.write("%10.4E  " % stress)
+    for j in LD:
+        temp = 0.0
+        field = i.fieldOutputs['SDV5'].getSubset(region=j).values
+        for k in field:
+            temp = temp + k.data
+        temp = temp/len(field)
+        fp.write("%10.6E  " % temp)
+    fp.write("\n")
 
-### Reference
-Asaro, R.J., Needleman, A., 1985. Overview no. 42 texture development and strain hardening in rate dependent polycrystals. Acta Metall. 33, 923–953.
-Kalidindi, S.R., Bronkhorst, C.A., Anand, L., 1992. Crystallographic texture evolution in bulk deformation processing of FCC metals. J. Mech. Phys. Solids 40, 537–569.
-Chaboche, J.-L., 1986. Time-independent constitutive theories for cyclic plasticity. Int. J. Plast. 2, 149–188.
+    tempF = 0.0
+    numF = 0
+    tempB = 0.0
+    numB = 0
+    for j in LD[0:4]:
+        field = i.fieldOutputs['S'].getSubset(region=j).values
+        for k in field:
+            tempF = tempF + k.data[1]
+            numF = numF + 1
+    for j in LD[5:8]:
+        field = i.fieldOutputs['S'].getSubset(region=j).values
+        for k in field:
+            tempB = tempB + k.data[1]
+            numB = numB + 1
+    print("%10.3f  %10.3f" % (tempF/numF/1E6,tempB/numB/1E6)) 
+
+fp.close()
+
+
+#print('\nExtracting lattice strain along TD')
+
+TD = []
+TD.append(assembly.elementSets['FCC-TD200'])
+TD.append(assembly.elementSets['FCC-TD220'])
+TD.append(assembly.elementSets['FCC-TD111'])
+TD.append(assembly.elementSets['FCC-TD311'])
+TD.append(assembly.elementSets['FCC-TD331'])
+TD.append(assembly.elementSets['BCC-TD200'])
+TD.append(assembly.elementSets['BCC-TD110'])
+TD.append(assembly.elementSets['BCC-TD211'])
+TD.append(assembly.elementSets['BCC-TD321'])
+
+fp = open('lattice_strain_TD.dat','w')
+for i in odb.steps['Step-1'].frames:
+#    print('\nExtracting from Frame:\t'+str(i.frameId))
+    # calculate the average stress
+    stress = 0.0
+    x = i.fieldOutputs['S'].values
+    for j in x:
+        stress = stress + j.data[1]
+    stress = stress/len(x)/1E6
+    fp.write("%10.4E  " % stress)
+    for j in TD:
+        temp = 0.0
+        field = i.fieldOutputs['SDV4'].getSubset(region=j).values
+        for k in field:
+            temp = temp + k.data
+        temp = temp/len(field)
+        fp.write("%10.6E  " % temp)
+
+    fp.write("\n")
+
+fp.close()
+```
+
+### Reference of Crystal Plasticity Model
+"Overview no. 42 texture development and strain hardening in rate dependent polycrystals." **Acta Metall**. 33, 923–953, (1985).
+
+"Crystallographic texture evolution in bulk deformation processing of FCC metals. " **Journal of the Mechanics and Physics of Solids**, 40, 537–569 (1992).
+
+### Our recent paper using CPFEM
+
+"Additively manufactured hierarchical stainless steels with high strength and ductility." **Nature Materials**, 17, 63-71 (2018)
+
+"Microscale residual stresses in additively manufactured stainless steel." **Nature Communications**, 10, 4338 (2019).
+
+"Modeling of microscale internal stresses in additively manufactured stainless steel." **Modelling and Simulation in Materials Science and Engineering**, 30, 074001 (2022).
+
+"Strong yet ductile nanolamellar high-entropy alloys by additive manufacturing." **Nature**, 608, 62-68 (2022)
+
+"Modeling of crack tip fields and fatigue crack growth in fcc crystals." **Journal of the Mechanics and Physics of Solids**, 188, 105691 (2024)
