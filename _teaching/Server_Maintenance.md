@@ -3,10 +3,11 @@ title: "Group Server Maintenance Handbook"
 collection: teaching
 type: "Tutorials"
 permalink: /teaching/2024-fall-teaching-3
-venue: "Peking University"
+venue: "written by Yifeng Xie"
 date: 2024-10-15
 location: "Beijing, China"
 ---
+
 ## 服务器管理员手册
 
 ## 第一章：SSH连接
@@ -188,5 +189,3 @@ sudo service ssh restart
 1.只上传了.pub公钥到~/.ssh/目录，但是没有在authorized_keys里设置；
 
 2.authorized_keys权限和~/.ssh/权限关系错误。
-
-谢谊锋 2024.10
