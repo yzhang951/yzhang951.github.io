@@ -28,4 +28,6 @@ shieldio_data2 = {
 
 with open(f'results/gs_data_shieldsio.json', 'w') as outfile:
     json.dump(shieldio_data, outfile, ensure_ascii=False)
+
+with open(f'results/gs_data_shieldsio2.json', 'w') as outfile:
     json.dump(shieldio_data2, outfile, ensure_ascii=False)
