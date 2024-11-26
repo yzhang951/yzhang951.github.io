@@ -26,7 +26,7 @@ shieldio_data2 = {
   "message": f"{len(author['publications'])}",
 }
 
-with open(f'results/gs_data_shieldsio.json', 'w') as outfile:
+with open(f'results/gs_data_shieldsio1.json', 'w') as outfile:
     json.dump(shieldio_data, outfile, ensure_ascii=False)
 
 with open(f'results/gs_data_shieldsio2.json', 'w') as outfile:
