@@ -23,7 +23,7 @@ shieldio_data = {
 shieldio_data2 = {
   "schemaVersion": 1,
   "label": "num_pub",
-  "message": f"{len(author['publications'])}",
+  "message": f"{len(author['publications'])-1}",
 }
 
 with open(f'results/gs_data_shieldsio1.json', 'w') as outfile:
