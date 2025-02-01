@@ -9,7 +9,7 @@ citation: 'X. Wu, <u>Y. Zhang</u>, S. Mao*, &quot;Learning the physics-consisten
 authors: 'X. Wu, Y. Zhang, S. Mao'
 volume: '437'
 pages: '117748'
-gs_citation: ''
+gs_citation: 'iH-uZ7U-co4C'
 tags:
   - Machine Learning
 ---
