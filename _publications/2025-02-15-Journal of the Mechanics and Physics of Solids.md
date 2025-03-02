@@ -1,7 +1,7 @@
 ---
 title: ""
 collection: publications
-permalink: /publication/2025-02-15-Mechanics-of-gradient-nanostructured-metals
+permalink: /publication/2025-02-15-JMPSa
 date: 2025-02-15
 venue: 'Journal of the Mechanics and Physics of Solids'
 paperurl: 'https://doi.org/10.1016/j.jmps.2025.106051'
