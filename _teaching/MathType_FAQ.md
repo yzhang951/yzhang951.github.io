@@ -3,6 +3,7 @@ title: "MathType 常见问题解答（FAQ）"
 collection: teaching
 type: "Tutorial"
 permalink: /teaching/2024-fall-teaching-5
+excerpt: ""
 venue: "by Prof. Zhang"
 date: 2026-05-18
 location: "Beijing, China"
